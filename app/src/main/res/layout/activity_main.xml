@@ -1,0 +1,969 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#DBE5ED"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="#13C617"
+        android:gravity="center"
+        android:id="@+id/actionBar"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aclonica"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="Sevimli Sahobalar " />
+
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/sahobalarList"
+                >
+                <androidx.cardview.widget.CardView
+                    style="@style/layoutStyle">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sahobaInfo1"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/moon"
+                            android:layout_margin="16dp"
+                            android:id="@+id/logo1"
+                            />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:text="Abu Bakr"
+                                android:id="@+id/sahoba1"
+                                android:layout_marginTop="3dp"
+                                style="@style/textStyle" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/aclonica"
+                                android:textColor="#66000000"
+                                android:text="Alloh ulardan rozi bo'lsin"
+                                />
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_next"
+                            android:layout_margin="16dp"
+                            android:layout_gravity="center"
+                            />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    style="@style/layoutStyle">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sahobaInfo2"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/moon"
+                            android:layout_margin="16dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:text="Abu Bakr"
+                                android:id="@+id/sahoba2"
+                                android:layout_marginTop="3dp"
+                                style="@style/textStyle" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/aclonica"
+                                android:textColor="#66000000"
+                                android:text="Alloh ulardan rozi bo'lsin"
+                                />
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_next"
+
+                            android:layout_margin="16dp"
+                            android:layout_gravity="center"
+                            />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    style="@style/layoutStyle">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sahobaInfo3"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/moon"
+                            android:layout_margin="16dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:text="Abu Bakr"
+                                android:id="@+id/sahoba3"
+                                android:layout_marginTop="3dp"
+                                style="@style/textStyle" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/aclonica"
+                                android:textColor="#66000000"
+                                android:text="Alloh ulardan rozi bo'lsin"
+                                />
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_next"
+
+                            android:layout_margin="16dp"
+                            android:layout_gravity="center"
+                            />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    style="@style/layoutStyle">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sahobaInfo4"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/moon"
+                            android:layout_margin="16dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:text="Abu Bakr"
+                                android:id="@+id/sahoba4"
+                                android:layout_marginTop="3dp"
+                                style="@style/textStyle" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/aclonica"
+                                android:textColor="#66000000"
+                                android:text="Alloh ulardan rozi bo'lsin"
+                                />
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_next"
+                            android:layout_margin="16dp"
+                            android:layout_gravity="center"
+                            />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    style="@style/layoutStyle">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sahobaInfo5"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/moon"
+                            android:layout_margin="16dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:text="Abu Bakr"
+                                android:id="@+id/sahoba5"
+                                android:layout_marginTop="3dp"
+                                style="@style/textStyle" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/aclonica"
+                                android:textColor="#66000000"
+                                android:text="Alloh ulardan rozi bo'lsin"
+                                />
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_next"
+                            android:layout_margin="16dp"
+                            android:layout_gravity="center"
+                            />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    style="@style/layoutStyle">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/sahobaInfo6"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/moon"
+                            android:layout_margin="16dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:text="Abu Bakr"
+                                android:id="@+id/sahoba6"
+                                android:layout_marginTop="3dp"
+                                style="@style/textStyle" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/aclonica"
+                                android:textColor="#66000000"
+                                android:text="Alloh ulardan rozi bo'lsin"
+                                />
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_next"
+                            android:layout_margin="16dp"
+                            android:layout_gravity="center"
+                            />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    style="@style/layoutStyle">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sahobaInfo7"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/moon"
+                            android:layout_margin="16dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:text="Abu Bakr"
+                                android:id="@+id/sahoba7"
+                                android:layout_marginTop="3dp"
+                                style="@style/textStyle" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/aclonica"
+                                android:textColor="#66000000"
+                                android:text="Alloh ulardan rozi bo'lsin"
+                                />
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_next"
+                            android:layout_margin="16dp"
+                            android:layout_gravity="center"
+                            />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    style="@style/layoutStyle">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sahobaInfo8"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/moon"
+                            android:layout_margin="16dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:text="Abu Bakr"
+                                android:id="@+id/sahoba8"
+                                android:layout_marginTop="3dp"
+                                style="@style/textStyle" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/aclonica"
+                                android:textColor="#66000000"
+                                android:text="Alloh ulardan rozi bo'lsin"
+                                />
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_next"
+                            android:layout_margin="16dp"
+                            android:layout_gravity="center"
+                            />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    style="@style/layoutStyle">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sahobaInfo9"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/moon"
+                            android:layout_margin="16dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:text="Abu Bakr"
+                                android:id="@+id/sahoba9"
+                                android:layout_marginTop="3dp"
+                                style="@style/textStyle" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/aclonica"
+                                android:textColor="#66000000"
+                                android:text="Alloh ulardan rozi bo'lsin"
+                                />
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_next"
+                            android:layout_margin="16dp"
+                            android:layout_gravity="center"
+                            />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    style="@style/layoutStyle">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sahobaInfo10"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/moon"
+                            android:layout_margin="16dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:text="Abu Bakr"
+                                android:id="@+id/sahoba10"
+                                android:layout_marginTop="3dp"
+                                style="@style/textStyle" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/aclonica"
+                                android:textColor="#66000000"
+                                android:text="Alloh ulardan rozi bo'lsin"
+                                />
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_next"
+                            android:layout_margin="16dp"
+                            android:layout_gravity="center"
+                            />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    style="@style/layoutStyle">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sahobaInfo11"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/moon"
+                            android:layout_margin="16dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:text="Abu Bakr"
+                                android:id="@+id/sahoba11"
+                                android:layout_marginTop="3dp"
+                                style="@style/textStyle" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/aclonica"
+                                android:textColor="#66000000"
+                                android:text="Alloh ulardan rozi bo'lsin"
+                                />
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_next"
+                            android:layout_margin="16dp"
+                            android:layout_gravity="center"
+                            />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    style="@style/layoutStyle">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sahobaInfo12"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/moon"
+                            android:layout_margin="16dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:text="Abu Bakr"
+                                android:id="@+id/sahoba12"
+                                android:layout_marginTop="3dp"
+                                style="@style/textStyle" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/aclonica"
+                                android:textColor="#66000000"
+                                android:text="Alloh ulardan rozi bo'lsin"
+                                />
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_next"
+                            android:layout_margin="16dp"
+                            android:layout_gravity="center"
+                            />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    style="@style/layoutStyle">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sahobaInfo13"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/moon"
+                            android:layout_margin="16dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:text="Abu Bakr"
+                                android:id="@+id/sahoba13"
+                                android:layout_marginTop="3dp"
+                                style="@style/textStyle" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/aclonica"
+                                android:textColor="#66000000"
+                                android:text="Alloh ulardan rozi bo'lsin"
+                                />
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_next"
+                            android:layout_margin="16dp"
+                            android:layout_gravity="center"
+                            />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    style="@style/layoutStyle">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sahobaInfo14"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/moon"
+                            android:layout_margin="16dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:text="Abu Bakr"
+                                android:id="@+id/sahoba14"
+                                android:layout_marginTop="3dp"
+                                style="@style/textStyle" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/aclonica"
+                                android:textColor="#66000000"
+                                android:text="Alloh ulardan rozi bo'lsin"
+                                />
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_next"
+                            android:layout_margin="16dp"
+                            android:layout_gravity="center"
+                            />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    style="@style/layoutStyle">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sahobaInfo15"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/moon"
+                            android:layout_margin="16dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:text="Abu Bakr"
+                                android:id="@+id/sahoba15"
+                                android:layout_marginTop="3dp"
+                                style="@style/textStyle" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/aclonica"
+                                android:textColor="#66000000"
+                                android:text="Alloh ulardan rozi bo'lsin"
+                                />
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_next"
+                            android:layout_margin="16dp"
+                            android:layout_gravity="center"
+                            />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    style="@style/layoutStyle">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sahobaInfo16"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/moon"
+                            android:layout_margin="16dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:text="Abu Bakr"
+                                android:id="@+id/sahoba16"
+                                android:layout_marginTop="3dp"
+                                style="@style/textStyle" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/aclonica"
+                                android:textColor="#66000000"
+                                android:text="Alloh ulardan rozi bo'lsin"
+                                />
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_next"
+                            android:layout_margin="16dp"
+                            android:layout_gravity="center"
+                            />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    style="@style/layoutStyle">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sahobaInfo17"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/moon"
+                            android:layout_margin="16dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:text="Abu Bakr"
+                                android:id="@+id/sahoba17"
+                                android:layout_marginTop="3dp"
+                                style="@style/textStyle" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/aclonica"
+                                android:textColor="#66000000"
+                                android:text="Alloh ulardan rozi bo'lsin"
+                                />
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_next"
+                            android:layout_margin="16dp"
+                            android:layout_gravity="center"
+                            />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    style="@style/layoutStyle">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sahobaInfo18"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/moon"
+                            android:layout_margin="16dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:text="Abu Bakr"
+                                android:id="@+id/sahoba18"
+                                android:layout_marginTop="3dp"
+                                style="@style/textStyle" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/aclonica"
+                                android:textColor="#66000000"
+                                android:text="Alloh ulardan rozi bo'lsin"
+                                />
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_next"
+                            android:layout_margin="16dp"
+                            android:layout_gravity="center"
+                            />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    style="@style/layoutStyle">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sahobaInfo19"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/moon"
+                            android:layout_margin="16dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:text="Abu Bakr"
+                                android:id="@+id/sahoba19"
+                                android:layout_marginTop="3dp"
+                                style="@style/textStyle" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/aclonica"
+                                android:textColor="#66000000"
+                                android:text="Alloh ulardan rozi bo'lsin"
+                                />
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_next"
+                            android:layout_margin="16dp"
+                            android:layout_gravity="center"
+                            />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    style="@style/layoutStyle">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sahobaInfo20"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/moon"
+                            android:layout_margin="16dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:text="Abu Bakr"
+                                android:id="@+id/sahoba20"
+                                android:layout_marginTop="3dp"
+                                style="@style/textStyle" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/aclonica"
+                                android:textColor="#66000000"
+                                android:text="Alloh ulardan rozi bo'lsin"
+                                />
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_next"
+                            android:layout_margin="16dp"
+                            android:layout_gravity="center"
+                            />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
